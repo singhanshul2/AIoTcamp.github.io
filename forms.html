@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        #ba{
+            height: 100px;
+            width: 455px;
+            background-image: url('com.png');
+            background-repeat: no-repeat;
+            background-position:center center;
+            background-position-y: 10px;
+
+        }
+    </style>
+</head>
+
+<body id="ba">
+    <h2>This is Form</h2>
+    <form action="backend.php" method="POST" >
+        <label for="name">Name:</label>
+        <div>
+            <input type="text" placeholder="Username" name="myName" id="name">
+        </div>
+        <br>
+        <label for="pass">Password:</label>
+        <div>
+            <input type="password" placeholder="Password" id="pass">
+        </div>
+        <br>
+        <div>
+            <input type="email" , name="my Email" placeholder="e-mail" id="mail">
+            <!--name attribute here to identify the value of the E-mail in backend for the data processing -->
+        </div>
+        <br>
+
+        <label for="da">Date: </label>
+        <div>
+            <input type="date" name="myDate" id="da">
+        </div>
+        <br>
+        <!-- <label for="">Date: </label> -->
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+        </div>
+        <br>
+        <label for="text"> Write about you: </label>
+        <div>
+            <textarea name="mytext" id="text" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <label for="eligible">Are you eligible?</label>
+        <div>
+            <input type="checkbox" name="myEligibility" checked id="eligible">
+        </div>
+        <br>
+        <label for="bo">Bonus: </label>
+        <div>
+            <input type="number" name="myBonus" id="bo">
+        </div>
+        <br>
+        <div>
+            <label for="job">Job Description</label>
+            <select name="select" id="job">
+                <option value="null" selected>--</option>
+                <option value="sit">Sitting</option>
+                <option value="field">Field job</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit now"><input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>

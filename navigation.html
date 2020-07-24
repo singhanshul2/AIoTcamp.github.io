@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    /* * {
+        /* font-family: Arial, Helvetica, sans-serif; */
+        /* font-style: normal; */
+    } */
+
+    body {
+        background-color: white;
+        font-family: 'Ranchers', cursive;
+        font-size: 40px;
+    }
+
+    .navbar {
+        /* background-color: rgb(194, 194, 219); */
+        border-radius: 0px;
+    }
+
+    .navbar ul {
+        overflow: initial;
+    }
+
+    .navbar ul li {
+        list-style: none;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        float: right;
+        margin-right: 10px;
+        margin-bottom: 50px;
+        padding: 20px;
+        color: black;
+        font-weight: bold;
+    }
+
+    a:hover {
+        background-color: rgb(162, 145, 223);
+        transform: scale(1.2);
+    }
+
+    .navbar input {
+        float: right;
+        margin-right: 10px;
+        margin-top: 7px;
+        padding: 2px;
+    }
+
+    .navbar ul li button {
+        float: right;
+        margin-right: 30px;
+        margin-top: 8px;
+        padding-top: 1px;
+        cursor: pointer;
+    }
+
+    /* a:hover {
+        /* background-color: rgb(179, 178, 235); */
+    }
+
+    */ .point {
+        cursor: pointer;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    .header {
+        margin-top: 50px;
+        background-color: grey;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: none;
+    }
+
+    header a:hover {
+        /* background-color: lightslategray; */
+        cursor: pointer;
+    }
+
+    .slideshow-container {
+        max-width: 80%;
+        position: relative;
+        margin: auto;
+    }
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease-in;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+        .text {
+            font-size: 11px
+        }
+    }
+
+    /* section {
+            width: 100%;
+            height: 2000px;
+            border: 2px solid green;
+        } */
+    .sec {
+        width: 100%;
+        height: 40px;
+    }
+
+    .container {
+        width: 100%;
+        height: 2000px;
+
+        border: 2px solid red;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .container-1 {
+        width: 450px;
+        margin: 20px;
+        height: 1500px;
+        /* border: 2px solid blue; */
+        border: none;
+        border-right: 6px solid #f4511e;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+        background-color: linen;
+    }
+
+    .container-2 {
+        width: 1300px;
+        margin: 20px;
+        height: 1000px;
+        /* border: 2px solid blue; */
+        border: none;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* flex-direction: row; */
+    }
+
+    /* .vl {
+        border-left: 6px solid green;
+        height: 1300px;
+    } */
+
+    .item-1 {
+        width: 400px;
+        margin: 20px;
+        /* margin-top: 10px; */
+        /* margin-left: 30px; */
+        /* margin-right: 70px; */
+        padding: 3px;
+        height: 300px;
+        /* border: 2px solid red; */
+        border: none;
+        align-items: stretch;
+        /* position: absolute; */
+    }
+
+    .item-5 {
+        width: 1100px;
+        margin-top: 20px;
+        margin-left: 20px;
+        /* margin-top: 10px; */
+        /* margin-left: 30px; */
+        /* margin-right: 70px; */
+        padding: 70px;
+        height: 600px;
+        /* border: 2px solid red; */
+        border: none;
+        /* flex-direction: row; */
+        align-items: stretch;
+        /* background-color: linen; */
+        box-sizing: border-boxs;
+        margin: auto;
+
+        /* flex-direction: row;
+            flex-grow: 3; */
+    }
+
+    /* #item-2 {
+            width: 200px;
+            margin: 20px;
+            /* margin-top: 10px; */
+    /* margin-left: 30px; */
+    /* margin-right: 70px; */
+    padding: 3px;
+    height: 200px;
+    border: 2px solid red;
+    /* position: absolute; */
+    }
+
+    */
+    /* #item-3 {
+            width: 200px;
+            margin: 20px;
+            /* margin-top: 10px; */
+    /* margin-left: 30px; */
+    /* margin-right: 70px; */
+    padding: 3px;
+    height: 200px;
+    border: 2px solid red;
+    /* position: absolute; */
+
+    }
+
+    */
+    /* #item-4 {
+            width: 200px;
+            margin: 20px;
+            /* margin-top: 10px; */
+    /* margin-left: 30px; */
+    /* margin-right: 70px; */
+    /* padding: 3px;
+    height: 200px;
+    border: 2px solid red; */
+    /* flex-direction: row; */
+    /* background-color: rgb(111, 120, 238); */
+    }
+
+    /* .button {
+        background-color: #f4511e;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+    } */
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav_bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul  style=" font-family: 'Ranchers', cursive;">  
+            <li><button type="submit" style="margin-top: 25.5px;"><i class="fa fa-search"></i></button></li>
+            <input type="text" placeholder="Search website" style="margin-top: 25px;">
+            <li><a href="/" id="ref">Services</a></li>
+            <li><a href="/">Contact Us</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Home</a></li>
+
+        </ul>
+    </nav>
+    <header class="mar">
+        <a class="point">
+            <img alt="content" width="250" height="100" src="AioT_18.png" fill="none" stroke="currentColor"
+                stroke-linecap="round" style="margin-left: 0px; margin-top: -2px;">
+            <!-- <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path> -->
+            </img>
+            <!-- <span class="ml-3 text-xl"></span>-->
+        </a>
+    </header>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="AioT_3.jpg" style="display: flex; justify-content: center;align-items: center;margin-left: 200px;width:1100px;height: 500px;">
+            <!-- <div class="text">Caption Text</div> -->
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="prateek.jpg" style="display: flex; justify-content: center;align-items: center;width:1100px;height: 500px;margin-left: 230px;">
+            <!-- <div class="text">Caption Two</div> -->
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="mo.jpg" style="display: flex; justify-content: center;margin-left: 230px;align-items: cente;width:1100px;height: 500px;">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+    <section class="sec">
+
+    </section>
+    <div class="container">
+        <div class="container-1">
+            <!-- <!-- <div class="item-1">First box</div> -->
+            <div class="item-1">
+                <!-- <embed type="image/jpg" width="90" height="90" display="block" margin="auto" src="mr_wang.jpg"> -->
+                <img src="mr_wang.jpg" alt="Loading" width="95" height="95" style="margin:auto; display:block;">
+                <h3 style="text-align: center;">Director</h3>
+                <h2 style="text-align: center;">Mr. Wisdom Wang</h2>
+                <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                <p class="text-base text-gray-600">Mr.Wang is currently charted Accountant. He is
+                    intrerested in establishing foundation of
+            </div>
+            <div class="item-1">
+                <!-- <embed type="image/jpg" width="80" height="80" src="ans.jpg"> -->
+                <img src="ans.jpg" alt="Loading" width="95" height="95" style="margin:auto; display:block;">
+                <h3 style="text-align: center;">Instructor#1
+                </h3>
+                <h2 style="text-align: center;">Mr. Anshul Kumar Singh
+                </h2>
+                <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                <p class="text-base text-gray-600">Mr. Anshul is a Ph.D. scholar in Mechanical
+                    Department NTUST, Taiwan. He is currently working on digital control. He has done projects
+                    on IoT sytems.</p>
+            </div>
+            <div class="item-1">
+                <img src="prateek.jpg" alt="Loading" width="95" height="95" style="margin:auto; display:block;">
+                <h3 style="text-align: center;">Instructor#2</h3>
+                <h2 style="text-align: center;">Mr. Prateek Verma</h2>
+                <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                <p class="text-base text-gray-600">Mr. Prateek is a Ph.D. scholar in Mechanical
+                    Department NTUST, Taiwan. He is currently working on Ultracapacitors. </p>
+            </div>
+            <!-- <div class="item" id="item-1"> First box</div>
+            <!-- <div class="item" id="item-2"> First box</div> -->
+            <div class="item-1" id="item-1">
+                <img src="mo.jpg" alt="Loading" width="95" height="95" style="margin:auto; display:block;">
+                <h3 style="text-align: center;">Instructor#3</h3>
+                <h2 style="text-align: center;">Mr. Morritz Sontheimer</h2>
+                <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                <p class="text-base text-gray-600">Mr. Morritz is a Ph.D. scholar in Mechanical Department
+                    NTUST, Taiwan. He is currently working on computer vision and machine learning.</p>
+            </div>
+            <!-- <div class="item" id="item-4"> First box</div>  -->
+        </div>
+        <div class="vl"></div>
+        <div class="container-2">
+            <div class="item-5">
+                <p class="leading-relaxed text-XL mb-4" style="letter-spacing: 3px; line-height: 1.6;text-align: justify;text-overflow:wrap;">AI and IoT are the future of Technology. They have
+                    marked an ubiquitous presence now a days. Besides easing out the human efforts these
+                    tecnologies have opened new avenues for the tech enthusiasts.<span id="dots">...</span>
+                    <span id="more" style="display: none;">Wielding skills to design
+                        and develop AI and IoT based technologies are taken with high regards by big Tech
+                        corporations. These coroporations always look forward to hire professionals equipped
+                        with AI and IoT skills. Also an indivisual familiar with these skills have tremendous
+                        opportunities to enter the entrepreneurship. For students who are genuinely interested
+                        in taking the above courses as their subjects in the national universities like NTU,
+                        NTUST etc., this summer camp will be of great help for them. The courses will be taken by the </span></p>
+                <button class="button" id="myBtn"
+                    style="vertical-align: middle; margin: auto; width: 125px; height: 40px; padding: 10px 10px; display: inline-block; font-size: 16px; cursor: pointer;border-radius: 4px;background-color: #f4511e;border: none; color: #FFFFFF;"
+                    class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                    onclick="myFunction()"><span>Read more</span>
+                </button>
+            </div>
+            <!-- <div class="item" id="item-5"> First box</div> -->
+
+        </div>
+    </div>
+
+    <script>
+        // function myFunction() {
+        //     var dots = document.getElementById("dots");
+        //     var moreText = document.getElementById("more");
+        //     var btnText = document.getElementById("myBtn");
+
+        //     if (dots.style.display == "none") {
+        //         dots.style.display = "inline";
+        //         btnText.innerHTML = "Read more";
+        //         moreText.style.display = "none";
+        //     } else {
+        //         dots.style.display = "none";
+        //         btnText.innerHTML = "Read less";
+        //         moreText.style.display = "inline";
+        //     }
+        // }
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display == "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "flex";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <!-- // var video = document.getElementById("myVideo");
+
+        // Get the button
+        // var btn = document.getElementById("myBtn1");
+
+        // // Pause and play the video, and change the button text
+        // function myFunction1() {
+        //     if (video.paused) {
+        //         video.play();
+        //         btn.innerHTML = "Pause";
+        //     } else {
+        //         video.pause();
+        //         btn.innerHTML = "Play";
+        //     }
+        // } -->
+</body>
+
+</html>

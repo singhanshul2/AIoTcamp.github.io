@@ -1,0 +1,150 @@
+"vertical-align: middle; margin: auto; width: 125px; height: 40px; padding: 10px 10px; display: inline-block; font-size: 16px;
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>MyWebsite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <style>
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item {
+            list-style: none;
+            color: white;
+            /* padding-top: ; */
+            /* flex-direction: column; */
+            transition: 0.9s;
+            margin: 0px;
+            font-size: 1.3 rem;
+
+        }
+
+        
+
+        /* section {
+            height: 344px;
+            /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: 'Ranchers',
+        cursive;
+        }
+
+        */
+        /* header::before {
+            content: "";
+            background: url(https://source.unsplash.com/1600x900/?education) no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        } */
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        /* For navigation bar */
+        #container {
+            display: flex;
+            padding: 0px;
+            margin: 0px;
+            /* justify-content: center; */
+            background-color: #0007;
+            transition: all 1s ease-in;
+            align-items: center;
+        }
+
+        /* For navigation:UL bar */
+        .navigation {
+            font-family: 'Ranchers', cursive;
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            flex-basis: content;
+            /* margin-left: 1000px; */
+
+        }
+
+        #logo {
+            margin: 8px 6px;
+        }
+
+        #logo img {
+            margin: -5px 36px;
+        }
+
+        .item a {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        .item:hover {
+            background-color: violet;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="container">
+            <div id="logo">
+                <a>
+                    <img alt="Loading..." width="250" height="80" src="AioT_18.png" fill="none" stroke="currentColor"
+                        stroke-linecap="round" style="margin-left: 0px; margin-top: -2px;">
+                    <!-- <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path> -->
+                    </img>
+                    <!-- <span class="ml-3 text-xl"></span>-->
+                </a>
+            </div>
+            <!-- <h1 class="head">My First Website</h1> -->
+            <ul class="navigation">
+                <li class="item" id="item-1"><a href="/" style="color: white;">Home</a></li>
+                <li class="item" id="item-2"><a href="/" style="color: white;">About</a></li>
+                <li class="item" id="item-3"><a href="/" style="color: white;">Contact Us</a></li>
+                <li class="item" id="item-4"><a href="/" style="color: white;">Gallery</a></li>
+                <li class="item" id="item-5"><a href="/" style="color: white;">Services</a></li>
+                <!-- <input type="text" placeholder="Search website" style="margin-top: 20px; margin-bottom: 20px;">
+                <li style=" list-style: none;"><button type="submit" style="margin-top: 20px; cursor: pointer;">
+                    <iclass="fa fa-search"></i></button></li> -->
+            </ul>
+        </nav>
+    </header>
+    <section>
+
+        <h2>Welcome to the page</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ea neque, maiores beatae tenetur exercitationem
+            architecto odio officia fugiat consequatur distinctio tempora! Dolore sapiente nobis asperiores ipsum. Quod
+            laboriosam laudantium ex sed repellendus fugit vel assumenda, iste necessitatibus, sapiente dolores. Eius,
+            suscipit. In, nulla dignissimos debitis reprehenderit ullam dolorum voluptate voluptatem deserunt maiores
+            error id rem minima quibusdam ut ea illum itaque laudantium officia! Culpa, possimus fugiat vel quod dolore
+            alias cupiditate error suscipit aspernatur quaerat expedita totam tenetur ex nesciunt voluptas at, sequi
+            numquam delectus explicabo, voluptatum rem consequuntur. Ad hic vero, unde quam quisquam sit iure aliquam
+            accusamus maxime, asperiores fugiat impedit natus pariatur culpa quo laboriosam officiis repellat, delectus
+            esse numquam. Repellendus laudantium voluptate quasi cum eligendi at recusandae ipsam hic cupiditate fuga ex
+            omnis, dignissimos quam culpa alias quae vero.</p>
+    </Section>
+</body>
+
+</html>

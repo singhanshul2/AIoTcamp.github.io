@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="normal.css"> -->
+    <style>
+        #navigation {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+body{
+    background-color: orange;
+    margin:0px;
+    padding: 0px;
+}
+
+
+#logo img {
+    margin: 2px 2px;
+    display: block;
+    margin: auto;
+    height:80px
+}
+
+#navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navigation ul {
+    display: flex;
+    width: 484px;
+    /* flex-wrap: wrap; */
+
+}
+
+#navigation::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #0009;
+    /* background-color: black; */
+    /* opacity: 0.5; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.item01 {
+    list-style: none;
+    font-size: 1rem;
+
+    /* padding: 3px 22px;   Padding don't be given here */
+}
+
+#navigation ul li a {
+    font-family: 'Ranchers', cursive;
+    display: block;
+    text-decoration: none;
+    padding: 3px 22px;
+    /* Padding must be given here */
+    border-radius: 20px;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+#navigation ul li a:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <nav id="navigation">
+        <div id="logo">
+            <img alt="Loading..." width="250" height="70" src="AioT_18.png" fill="none" stroke="currentColor"
+                stroke-linecap="round;">
+            <!-- <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10white-5"></path> -->
+            </img>
+            <!-- <span class="ml-3 text-xl"></span>-->
+
+        </div>
+        <ul id="lap" style="list-style: none;">
+            <li class="item01" id="item-1"><a href="new_website.html">Home</a></li>
+            <li class="item01" id="item-2"><a href="about.html">About</a></li>
+            <li class="item01" id="item-3"><a href="/">Contact Us</a></li>
+            <li class="item01" id="item-4"><a href="/">Gallery</a></li>
+            <li class="item01" id="item-5"><a href="/">Services</a></li>
+            <!-- <input type="text" placeholder="Search website" style="margin-top: 20px; margin-bottom: 20px;">
+                <li style=" list-style: none;"><button type="submit" style="margin-top: 20px;cursor: pointer;">
+                    <iclass="fa fa-search"></i></button></li> -->
+        </ul>
+    </nav>
+    <div id="About" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div id="par" style="margin:2px 20px; width: 80%;">
+            <p
+                style="letter-spacing: 2px; word-spacing: 10px; font-family: 'Bree Serif', serif; font-weight: strong; font-size: x-large;text-align: center; background-color: orange;">
+                Our team is comprised of instructors pursuing Ph.D in diverse engineering background. The
+                instructors have experience in dealing with the
+                embedded systems, python and machine vision related projects. We can equip students with the
+                fundamental
+                knowledge to program embedded systems and python programming. Our curriculum also includes lauguages
+                for the web development like, HTML, javascript etc.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

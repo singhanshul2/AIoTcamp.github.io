@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:1500px)" href="lap.css">
+    <link rel="stylesheet" href="normal.css">
+
+    <style>
+        @media (min-width: 300px) and (max-width: 800px) {
+            #team {
+                /* margin: 0px; */
+                /* margin: 554px;  */
+                margin: 0px;
+                /* background-color: rgb(228, 222, 222);;  */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* flex-direction: column; */
+                /* border: 2px solid red; */
+                height: 490px;
+                /* height: 460px; */
+                position: relative;
+                top: 850px;
+            }
+
+            .item {
+                display: none;
+            }
+
+            .item01 {
+                display: flex;
+            }
+
+            #home p {
+                display: none;
+            }
+            #services{
+             display: none;   
+            }
+        }
+        
+        @media (min-width: 800px) and (max-width: 1500px) {
+            #team {
+                /* margin: 0px; */
+                /* margin: 554px;  */
+                margin: 0px;
+                /* background-color: rgb(228, 222, 222);;  */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* flex-direction: column; */
+                /* border: 2px solid red; */
+                height: 490px;
+                /* height: 460px; */
+                position: relative;
+                top: 1050px;
+            }
+            
+            .item {
+                display: none;
+            }
+            
+            .item01 {
+                display: flex;
+            }
+
+            #home p {
+                display: none;
+            }
+            
+            #services{
+             display: none;   
+            }
+        }
+
+        @media (min-width: 1500px) {
+            #team {
+                /* margin: 0px; */
+                /* margin: 554px;  */
+                margin: 0px;
+                /* background-color: rgb(228, 222, 222);;  */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* flex-direction: column; */
+                /* border: 2px solid red; */
+                height: 490px;
+                /* height: 460px; */
+                position: relative;
+                top: 500px;
+            }
+
+            #par {
+                /* border:5px solid red; */
+
+                /* border-radius: 30px; */
+                background-color: rgb(228, 222, 222);
+                position: absolute;
+                left: -24px;
+                top: 1040px;
+                z-index: -1;
+            }
+
+            /* #lap{
+                display: none;
+            } */
+            .item {
+                display: flex;
+            }
+
+            .item01 {
+                display: none;
+            }
+           
+        }
+        #back{
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background-image: url(back1.png);
+            background-repeat: no-repeat;
+            background-size: 121%;
+            z-index: -3;
+    }
+    </style>
+    <script>
+        alert("hello")
+    </script>
+    
+</head>
+
+
+
+<body>
+    <nav id="navigation">
+        <div id="logo">
+            <img alt="Loading..." width="250" height="70" src="AioT_18.png" fill="none" stroke="currentColor"
+                stroke-linecap="round;">
+            <!-- <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10white-5"></path> -->
+            </img>
+            <!-- <span class="ml-3 text-xl"></span>-->
+
+        </div>
+        <ul id="desktop">
+            <li class="item" id="item-1"><a href="#home" ;">Home</a></li>
+            <!-- <li class="item" id="item-2"><a href="/">About</a></li> -->
+            <li class="item" id="item-3"><a href="/">Contact Us</a></li>
+            <li class="item" id="item-4"><a href="/">Gallery</a></li>
+            <li class="item" id="item-5"><a href="/">Services</a></li>
+            <!-- <input type="text" placeholder="Search website" style="margin-top: 20px; margin-bottom: 20px;">
+                <li style=" list-style: none;"><button type="submit" style="margin-top: 20px;cursor: pointer;">
+                    <iclass="fa fa-search"></i></button></li> -->
+        </ul>
+        <ul id="lap">
+            <li class="item01" id="item-6"><a href="new_website.html">Home</a></li>
+            <li class="item01" id="item-7"><a href="about.html">About</a></li>
+            <li class="item01" id="item-8"><a href="/">Contact Us</a></li>
+            <li class="item01" id="item-9"><a href="/">Gallery</a></li>
+            <li class="item01" id="item-10"><a href="services.html">Services</a></li>
+            <!-- <input type="text" placeholder="Search website" style="margin-top: 20px; margin-bottom: 20px;">
+                <li style=" list-style: none;"><button type="submit" style="margin-top: 20px;cursor: pointer;">
+                    <iclass="fa fa-search"></i></button></li> -->
+        </ul>
+    </nav>
+
+    <section id="home">
+        <!-- <video autoplay muted loop id="myVideo">
+            <source src="Bg_video.mp4" type="video/mp4">
+          </video> -->
+        <!-- <h1>Our Team</h1> -->
+        <div id="team">
+            <div class="box">
+                <!-- <img src="mr_wang.jpg" alt=""> -->
+                <img src="mr_wangnew.png" alt="">
+                <h3 class="center">Director</h3>
+                <!-- <h2 class="center">Mr. Wisdom Wang</h2> -->
+                <h2 class="center">Mr. Wisdom Wang</h2>
+            </div>
+            <div class="box">
+                <!-- <img src="ans.jpg" alt=""> -->
+                <img src="ansnew.png" alt="">
+                <h3 class="center">Instructor#1</h3>
+                <h2 class="center">Mr. Anshul K. Singh</h2>
+            </div>
+            <div class="box">
+                <!-- <img src="prateek.jpg" alt=""> -->
+                <img src="pranew.png" alt="">
+                <h3 class="center">Instructor#2</h3>
+                <h2 class="center">Mr. Prateek Verma</h2>
+            </div>
+            <div class="box">
+                <!-- <img src="mo.jpg" alt=""> -->
+                <img src="monew.png" alt="">
+                <h3 class="center">Instructor#3</h3>
+                <h2 class="center">Mr. Morritz Sontheimer</h2>
+            </div>
+        </div>
+        <div id="About" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <div id="par" style="margin:2px 20px; width: 100%;">
+                <p
+                    style="letter-spacing: 2px; word-spacing: 10px; font-family: 'Bree Serif', serif; font-weight: strong; font-size: x-large;text-align: center;position: absolute;left: 0;">
+                    Our team is comprised of instructors pursuing Ph.D in diverse engineering background. The
+                    instructors have experience in dealing with the
+                    embedded systems, python and machine vision related projects. We can equip students with the
+                    fundamental
+                    knowledge to program embedded systems and python programming. Our curriculum also includes lauguages
+                    for the web development like, HTML, javascript etc.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="back">
+
+    </section>
+
+    <section id="services">
+        <div id="service_container">
+            <div class="subcontainer">
+                <h2 class="center">Our Services</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum voluptatum exercitationem
+                    aspernatur
+                    minima
+                    qui facilis harum, soluta necessitatibus quisquam praesentium placeat reprehenderit quae nostrum
+                    unde
+                    modi
+                    at autem? Recusandae, pariatur ipsa sit delectus aspernatur illo eum est deserunt iusto atque
+                    dolorum.
+                </p>
+            </div>
+            <div class="subcontainer">
+                <h2 class="center"> Our Services</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum voluptatum exercitationem
+                    aspernatur
+                    minima
+                    qui facilis harum, soluta necessitatibus quisquam praesentium placeat reprehenderit quae nostrum
+                    unde
+                    modi
+                    at autem? Recusandae, pariatur ipsa sit delectus aspernatur illo eum est deserunt iusto atque
+                    dolorum.
+                </p>
+            </div>
+            <div class="subcontainer">
+                <h2 class="center">Our Services</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum voluptatum exercitationem
+                    aspernatur
+                    minima
+                    qui
+                    facilis harum, soluta necessitatibus quisquam praesentium placeat reprehenderit quae nostrum unde
+                    modi
+                    at
+                    autem?
+
+            </div>
+
+            <!-- <div class="subcontainer">
+                <h2 class="center">Our Services</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum voluptatum exercitationem
+                    aspernatur
+                    minima
+                    qui
+                    facilis harum, soluta necessitatibus quisquam praesentium placeat reprehenderit quae nostrum unde
+                    modi
+                    at
+                    autem?
+                    Recusandae, pariatur ipsa sit delectus aspernatur illo eum est deserunt iusto atque dolorum.
+                    Adipisci
+                    repellendus, tempore ea hic vitae veritatis nihil expedita ducimus qui dicta. Temporibus dolor nulla
+                    minima
+                    ratione voluptatibus itaque. Natus repudiandae esse sequi dolores fuga officia, expedita dolore ut,
+                    cupiditate
+                    voluptas reprehenderit a facilis quam molestiae ab eius quibusdam vero? Doloremque vero labore
+                    aspernatur
+                    ipsam
+                    hic deleniti blanditiis voluptatem soluta minus iure quo voluptas architecto nesciunt, magni nam
+                    perspiciatis ad
+                    nulla necessitatibus tenetur!</p>
+            </div>
+            <div class="subcontainer">
+                <h2 class="center">Our Services</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum voluptatum exercitationem
+                    aspernatur
+                    minima
+                    qui
+                    facilis harum, soluta necessitatibus quisquam praesentium placeat reprehenderit quae nostrum unde
+                    modi
+                    at
+                    autem?
+                    Recusandae, pariatur ipsa sit delectus aspernatur illo eum est deserunt iusto atque dolorum.
+                    Adipisci
+                    repellendus, tempore ea hic vitae veritatis nihil expedita ducimus qui dicta. Temporibus dolor nulla
+                    minima
+                    ratione voluptatibus itaque. Natus repudiandae esse sequi dolores fuga officia, expedita dolore ut,
+                    cupiditate
+                    voluptas reprehenderit a facilis quam molestiae ab eius quibusdam vero? Doloremque vero labore
+                    aspernatur
+                    ipsam
+                    hic deleniti blanditiis voluptatem soluta minus iure quo voluptas architecto nesciunt, magni nam
+                    perspiciatis ad
+                    nulla necessitatibus tenetur!</p>
+            </div> -->
+        </div>
+    </section>
+
+
+</body>
+
+</html>
